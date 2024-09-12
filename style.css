@@ -145,24 +145,90 @@ main {
 }
 @media (min-width: 1025px) {
   header {
-    justify-content: space-around;
+    flex-direction: row;
     height: auto;
-    padding: 0.5em;
+    padding: 0;
+    margin: 0;
   }
   .main-header {
     flex-direction: row;
     justify-content: space-between;
     background-color: #efeef3;
     width: 100%;
-  }
-  .main-header .image-link img {
-    max-width: 150px;
+    position: absolute;
+    top: 0;
   }
   .main-header nav {
     flex-direction: row;
     justify-content: space-between;
-    margin: 1em 0 1em 1em;
-    width: 80%;
+    width: 85%;
   }
-}
-/* BACKGROUND *//*# sourceMappingURL=style.css.map */
+  .main-header a {
+    font-size: 1.5rem;
+    margin: 0.5em;
+  }
+  .image-link {
+    display: block;
+    width: 10%;
+  }
+  .image-link img {
+    width: 100%;
+  }
+  .banner {
+    width: 100%;
+    height: 320px;
+    background-image: url("./img//BACKGROUND.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .glycolic-gloss {
+    flex-direction: row;
+    margin: 1rem 0;
+  }
+  .glycolic-gloss img {
+    width: 40%;
+    height: 100%;
+    margin: 1rem 1rem 1rem 6rem;
+  }
+  .glycolic-gloss-text {
+    max-width: 50%;
+    margin: 1rem 6rem 0.5rem 1rem;
+  }
+  .glycolic-gloss-text h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  .glycolic-gloss-text p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: auto;
+    margin-bottom: 0;
+  }
+  .produtos-favoritos {
+    flex-direction: row;
+    margin-bottom: 2em;
+  }
+  .produtos-favoritos h2 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    max-width: 50%;
+    margin: 1rem 1rem 1rem 6rem;
+    padding: 3em 0;
+  }
+  .produtos {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    gap: 0;
+    padding: 0;
+  }
+  .produtos .image-link-produtos {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 50%;
+    margin: 1rem 6rem 0.5rem 2.5rem;
+  }
+  .produtos .image-link-produtos img {
+    width: 200%;
+    height: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
