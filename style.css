@@ -26,6 +26,8 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
+  border: solid 3px darkred;
+  padding: 0.5em;
 }
 .main-header .image-link {
   display: inline-block;
@@ -49,6 +51,7 @@ header {
 .main-header nav a {
   display: block;
   text-decoration: none;
+  text-align: center;
   color: black;
   margin: 0.5em 0;
   font-size: 1.25rem;
@@ -149,7 +152,6 @@ main {
 }
 @media (min-width: 1025px) {
   header {
-    flex-direction: column-reverse;
     justify-content: space-around;
     height: auto;
     padding: 0.5em;
@@ -157,9 +159,8 @@ main {
   .main-header {
     flex-direction: row;
     justify-content: space-between;
-    position: absolute;
-    top: 0;
     background-color: #efeef3;
+    width: 100%;
   }
   .main-header .image-link img {
     max-width: 150px;
@@ -169,13 +170,6 @@ main {
     justify-content: space-between;
     margin: 1em 0 1em 1em;
     width: 80%;
-  }
-  .banner {
-    display: block;
-    width: 100%;
-    height: auto;
-    -o-object-fit: contain;
-       object-fit: contain;
   }
 }
 /* BACKGROUND *//*# sourceMappingURL=style.css.map */
