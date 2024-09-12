@@ -38,7 +38,6 @@ header {
     img {
       display: block;
       max-width: 180px;
-      height: auto;
     }
   }
 
@@ -78,6 +77,10 @@ main {
     height: auto;
     margin-top: 0.5em;
   }
+}
+
+.banner {
+  display: none;
 }
 
 .glycolic-gloss-text {
@@ -173,7 +176,6 @@ main {
     flex-direction: row;
     justify-content: space-between;
     background-color: #efeef3;
-    width: 100%;
     position: absolute;
     top: 0;
 
