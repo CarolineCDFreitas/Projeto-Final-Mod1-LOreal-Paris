@@ -1,3 +1,8 @@
+$direcao-flex-desktop: row;
+$direcao-flex-mobile: column;
+$espacoComum: 0.5em;
+$decoracoLink: none;
+
 * {
   margin: 0;
   padding: 0;
@@ -7,17 +12,20 @@
 body {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: #efeef3;
   font-family: "Kodchasan", sans-serif;
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+
+  @include flexbox-mobile();
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
   width: 100%;
   padding: 1em 1em 0;
-  margin-bottom: 0.5em;
+  margin-bottom: $espacoComum;
   max-height: 50%;
   // border: 2px solid aqua;
 }
@@ -27,7 +35,6 @@ header {
   flex-direction: column;
   width: 100%;
   // border: solid 3px darkred;
-  padding: 0.5em;
 
   .image-link {
     display: inline-block;
@@ -80,9 +87,9 @@ main {
     width: 90%;
     height: auto;
     margin-top: 0.5em;
+    // border: solid 3px indigo;
   }
 }
-
 
 .glycolic-gloss-text {
   display: flex;
@@ -92,18 +99,23 @@ main {
   a {
     text-decoration: none;
     color: black;
-  }
+    transition: color 0.3s ease;
 
-  h1 {
-    font-size: clamp(1.5rem, 3vw, 3rem);
-    font-weight: 500;
-    text-align: center;
-    line-height: 2rem;
-    margin: 1em;
-    white-space: wrap;
-    max-width: 90%;
-    height: auto;
-    // border: 3px solid darkblue;
+    h1 {
+      font-size: clamp(1.5rem, 3vw, 3rem);
+      font-weight: 500;
+      text-align: center;
+      line-height: 2rem;
+      margin: 1em;
+      white-space: wrap;
+      max-width: 90%;
+      height: auto;
+      // border: 3px solid darkblue;
+
+      &:hover {
+        color: #f6d3e2;
+      }
+    }
   }
 
   p {
@@ -141,9 +153,9 @@ main {
   // border: solid 3px darkorange;
   display: flex;
   justify-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
   gap: 1rem;
-  align-content: center;
   padding: 1em;
   width: 100%;
 
@@ -175,7 +187,8 @@ main {
     height: auto;
     padding: 0;
     margin: 0;
-  }   
+  }
+  
   .main-header {
     flex-direction: row;
     justify-content: space-between;
@@ -183,30 +196,27 @@ main {
     position: absolute;
     top: 0;
 
-    
+    .image-link {
+      display: block;
+      width: 10%;
+      img {
+        width: 100%;
+      }
+    }
+
     nav {
       flex-direction: row;
-      justify-content: space-around;
+      justify-content: space-between;
       width: 85%;
       gap: 1em;
 
-    }
-
-    a{
-      font-size: 1.5rem;
-      margin: 0.5em;
-    }
-    
-  }
-
-  .image-link {
-    display: block;
-    width: 10%;
-    img {
-      width: 100%;
+      a {
+        font-size: 1.5rem;
+        margin: 0.5em;
+      }
     }
   }
-  
+
   .banner {
     //   border: 3px solid fuchsia;
     display: block;
@@ -234,14 +244,14 @@ main {
     max-width: 50%;
     margin: 1rem 3rem 0.5rem 1rem;
 
-    h1{
+    h1 {
       // font-size: 2.5rem;
       font-weight: 600;
       // white-space: nowrap;
       // width: auto;
     }
 
-    p{
+    p {
       // font-size: 1.5rem;
       line-height: 2rem;
       width: auto;
@@ -249,12 +259,12 @@ main {
     }
   }
 
-  .produtos-favoritos{
+  .produtos-favoritos {
     flex-direction: row;
     justify-content: space-around;
     margin-bottom: 4em;
 
-    h2{
+    h2 {
       // font-size: 1.5rem;
       // font-weight: 500;
       max-width: 40%;
@@ -270,16 +280,39 @@ main {
     padding: 0;
     max-width: 50%;
 
-    .image-link-produtos{
+    .image-link-produtos {
       flex-direction: row;
       justify-content: space-between;
       max-width: 50%;
       margin: 1rem;
-    
-      img{
+
+      img {
         width: 100%;
         height: auto;
       }
     }
   }
+}
+
+
+@mixin flexbox-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+$espacoComum: 0.5em;
+$decoracaoLink: none;
+
+$direcao-flex-desktop: row;
+$direcao-flex-mobile: column;
+
+@mixin image-block {
+  display: inline-block;
+  text-align: center;
+}
+
+@mixin link-block {
+  display: block;
+  text-align: center;
 }
