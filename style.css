@@ -50,6 +50,10 @@ header {
   color: black;
   margin: 0.5em 0;
   font-size: 1.25rem;
+  transition: color 0.3s ease;
+}
+.main-header nav a:hover {
+  color: rgba(56, 50, 50, 0.3294117647);
 }
 
 .banner {
@@ -77,22 +81,24 @@ main {
   flex-direction: column;
   align-items: center;
 }
-.glycolic-gloss-text a {
-  text-decoration: none;
-  color: black;
-  transition: color 0.3s ease;
-}
-.glycolic-gloss-text a h1 {
+.glycolic-gloss-text h1 {
   font-size: clamp(1.5rem, 3vw, 3rem);
   font-weight: 500;
   text-align: center;
-  line-height: 2rem;
-  margin: 1em;
-  white-space: wrap;
+  padding: 0.5em;
+  margin: 0.5em;
   max-width: 90%;
   height: auto;
 }
-.glycolic-gloss-text a h1:hover {
+.glycolic-gloss-text h1 a {
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  margin: 0.5em;
+}
+.glycolic-gloss-text h1 a:hover {
   color: #f6d3e2;
 }
 .glycolic-gloss-text p {
@@ -128,6 +134,7 @@ main {
   flex-wrap: wrap;
   gap: 1rem;
   padding: 1em;
+  margin: 0.5em;
   width: 100%;
 }
 .produtos .image-link-produtos {
@@ -138,7 +145,6 @@ main {
 }
 .produtos .image-link-produtos img {
   display: block;
-  height: auto;
 }
 
 @media (max-width: 480px) {
@@ -227,7 +233,7 @@ main {
     flex-direction: row;
     justify-content: space-between;
     max-width: 50%;
-    margin: 1rem;
+    margin: 0.5em;
   }
   .produtos .image-link-produtos img {
     width: 100%;
