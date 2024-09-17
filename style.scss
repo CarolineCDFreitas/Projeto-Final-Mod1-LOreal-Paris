@@ -1,5 +1,3 @@
-$direcao-flex-desktop: row;
-$direcao-flex-mobile: column;
 $espacoComum: 0.5em;
 
 @mixin flexbox-mobile {
@@ -33,11 +31,7 @@ body {
 }
 
 header {
-
   @include flexbox-mobile();
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   width: 100%;
   padding: 1em 1em 0;
   margin-bottom: $espacoComum;
@@ -53,8 +47,6 @@ header {
 
   .image-link {
     @include image-block();
-    // display: inline-block;
-    // text-align: center;
     margin: 0 auto;
     // border: 2px solid burlywood;
 
@@ -66,17 +58,12 @@ header {
 
   nav {
     @include flexbox-mobile();
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     // border: 2px solid darkgreen;
     width: 100%;
     margin-top: $espacoComum;
 
     a {
       @include link-block();
-      // display: block;
-      // text-align: center;
       text-decoration: none;
       color: black;
       margin: 0.5em 0;
@@ -95,12 +82,7 @@ main {
 }
 
 .glycolic-gloss {
-
   @include flexbox-mobile();
-
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   margin: $espacoComum;
   // border: 2px solid purple;
 
@@ -114,9 +96,6 @@ main {
 
 .glycolic-gloss-text {
   @include flexbox-mobile();
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
 
   a {
     text-decoration: none;
@@ -154,9 +133,6 @@ main {
 
 .produtos-favoritos {
   @include flexbox-mobile();
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
   justify-content: space-around;
   margin: $espacoComum;
   // border: 3px solid olive;
@@ -184,15 +160,11 @@ main {
 
   .image-link-produtos {
     @include flexbox-mobile();
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
     margin: $espacoComum;
 
     img {
       display: block;
       // border: 3px solid gold;
-      // width: 100%;
       height: auto;
     }
   }
@@ -205,16 +177,15 @@ main {
 }
 
 @media (min-width: 1025px) {
-
   header {
-    flex-direction: $direcao-flex-desktop;
+    flex-direction: row;
     height: auto;
     padding: 0;
     margin: 0;
   }
-  
+
   .main-header {
-    flex-direction: $direcao-flex-desktop;
+    flex-direction: row;
     justify-content: space-between;
     background-color: #efeef3;
     position: absolute;
@@ -222,8 +193,6 @@ main {
 
     .image-link {
       @include link-block();
-      // display: block;
-      // text-align: center;
       width: 10%;
       img {
         width: 100%;
@@ -231,7 +200,7 @@ main {
     }
 
     nav {
-      flex-direction: $direcao-flex-desktop;
+      flex-direction: row;
       justify-content: space-between;
       width: 85%;
       gap: 1em;
@@ -254,7 +223,7 @@ main {
   }
 
   .glycolic-gloss {
-    flex-direction: $direcao-flex-desktop;
+    flex-direction: row;
     justify-content: space-around;
     margin: $espacoComum;
 
@@ -266,17 +235,15 @@ main {
   }
 
   .glycolic-gloss-text {
-    // justify-content: center;
     max-width: 50%;
     margin: 1rem 3rem 0.5rem 1rem;
 
-    h1 {
-      // font-size: 2.5rem;
-      font-weight: 600;
-      // white-space: nowrap;
-      // width: auto;
+    a {
+      h1 {
+        font-weight: 600;
+        // width: auto;
+      }
     }
-
     p {
       // font-size: 1.5rem;
       line-height: 2rem;
@@ -286,7 +253,7 @@ main {
   }
 
   .produtos-favoritos {
-    flex-direction: $direcao-flex-desktop;
+    flex-direction: row;
     justify-content: space-around;
     margin-bottom: 4em;
 
@@ -307,7 +274,7 @@ main {
     max-width: 50%;
 
     .image-link-produtos {
-      flex-direction: $direcao-flex-desktop;
+      flex-direction: row;
       justify-content: space-between;
       max-width: 50%;
       margin: 1rem;
@@ -319,26 +286,3 @@ main {
     }
   }
 }
-
-
-// @mixin flexbox-mobile {
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
-
-// $espacoComum: 0.5em;
-// $decoracaoLink: none;
-
-// $direcao-flex-desktop: row;
-// $direcao-flex-mobile: column;
-
-// @mixin image-block {
-//   display: inline-block;
-//   text-align: center;
-// }
-
-// @mixin link-block {
-//   display: block;
-//   text-align: center;
-// }
