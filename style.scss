@@ -19,25 +19,25 @@ header {
   padding: 1em 1em 0;
   margin-bottom: 0.5em;
   max-height: 50%;
-  border: 2px solid aqua;
+  // border: 2px solid aqua;
 }
 
 .main-header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border: solid 3px darkred;
+  // border: solid 3px darkred;
   padding: 0.5em;
 
   .image-link {
     display: inline-block;
     text-align: center;
     margin: 0 auto;
-    border: 2px solid burlywood;
+    // border: 2px solid burlywood;
 
     img {
       display: block;
-      max-width: 180px;
+      max-width: 100%;
     }
   }
 
@@ -45,10 +45,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid darkgreen;
+    // border: 2px solid darkgreen;
     margin: 0.5em 0;
     width: 100%;
-
+    
     a {
       display: block;
       text-decoration: none;
@@ -60,9 +60,13 @@ header {
   }
 }
 
+.banner {
+  display: none;
+}
+
 main {
   flex: 1;
-  border: 3px solid hotpink;
+  // border: 3px solid hotpink;
 }
 
 .glycolic-gloss {
@@ -70,7 +74,7 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 0.5em;
-  border: 2px solid purple;
+  // border: 2px solid purple;
 
   img {
     width: 90%;
@@ -79,9 +83,6 @@ main {
   }
 }
 
-.banner {
-  display: none;
-}
 
 .glycolic-gloss-text {
   display: flex;
@@ -97,7 +98,7 @@ main {
     white-space: wrap;
     max-width: 90%;
     height: auto;
-    border: 3px solid darkblue;
+    // border: 3px solid darkblue;
   }
 
   p {
@@ -108,16 +109,17 @@ main {
     max-width: 90%;
     height: auto;
     margin-bottom: 0.5em;
-    border: 3px solid sienna;
+    // border: 3px solid sienna;
   }
 }
 
 .produtos-favoritos {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
   margin: 0.5em;
-  border: 3px solid olive;
+  // border: 3px solid olive;
 
   h2 {
     font-size: 1.25rem;
@@ -126,20 +128,17 @@ main {
     max-width: 90%;
     height: auto;
     margin: 0.5em;
-    border: 2px solid deeppink;
+    // border: 2px solid deeppink;
   }
 }
 
 .produtos {
-  // display: grid;
-  // grid-template-columns: repeat(2, 1fr);
-  // gap: 1rem;
-
+  // border: solid 3px darkorange;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
-  // align-content: center;
+  align-content: center;
   padding: 1em;
   width: 100%;
 
@@ -203,6 +202,7 @@ main {
   
   .banner {
     //   border: 3px solid fuchsia;
+    display: block;
     width: 100%;
     height: 320px;
     background-image: url("./img//BACKGROUND.png");
@@ -212,23 +212,24 @@ main {
 
   .glycolic-gloss {
     flex-direction: row;
-    margin: 1rem 0;
+    justify-content: space-around;
+    margin: 0.5rem;
 
     img {
-      width: 40%;
+      max-width: 50%;
       height: 100%;
       margin: 1rem 1rem 1rem 6rem;
     }
   }
 
   .glycolic-gloss-text {
+    // justify-content: center;
     max-width: 50%;
-    margin: 1rem 6rem 0.5rem 1rem;
+    margin: 1rem 3rem 0.5rem 1rem;
 
     h1{
       font-size: 2.5rem;
       font-weight: 600;
-      // margin: 0;
       // white-space: nowrap;
       // width: auto;
     }
@@ -243,32 +244,34 @@ main {
 
   .produtos-favoritos{
     flex-direction: row;
-    margin-bottom: 2em;
+    justify-content: space-around;
+    margin-bottom: 4em;
 
     h2{
       font-size: 1.5rem;
       font-weight: 400;
-      max-width: 50%;
+      max-width: 40%;
       margin: 1rem 1rem 1rem 6rem;
-      padding: 3em 0;
+      padding: 0 auto;
     }
   }
 
   .produtos {
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
-    gap: 0;
+    // gap: 0;
     padding: 0;
+    max-width: 50%;
 
     .image-link-produtos{
       flex-direction: row;
       justify-content: space-between;
       max-width: 50%;
-      margin: 1rem 6rem 0.5rem 2.5rem;
+      margin: 1rem;
     
       img{
-        width: 200%;
-        height: 100%;
+        width: 100%;
+        height: auto;
       }
     }
   }
