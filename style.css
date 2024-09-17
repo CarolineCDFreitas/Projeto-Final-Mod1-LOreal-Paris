@@ -26,7 +26,6 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 0.5em;
 }
 .main-header .image-link {
   display: inline-block;
@@ -41,13 +40,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0.5em 0;
   width: 100%;
+  margin-top: 0.5em;
 }
 .main-header nav a {
   display: block;
-  text-decoration: none;
   text-align: center;
+  text-decoration: none;
   color: black;
   margin: 0.5em 0;
   font-size: 1.25rem;
@@ -109,8 +108,8 @@ main {
 .produtos-favoritos {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-around;
   margin: 0.5em;
 }
 .produtos-favoritos h2 {
@@ -163,6 +162,7 @@ main {
   }
   .main-header .image-link {
     display: block;
+    text-align: center;
     width: 10%;
   }
   .main-header .image-link img {
@@ -189,7 +189,7 @@ main {
   .glycolic-gloss {
     flex-direction: row;
     justify-content: space-around;
-    margin: 0.5rem;
+    margin: 0.5em;
   }
   .glycolic-gloss img {
     max-width: 50%;
