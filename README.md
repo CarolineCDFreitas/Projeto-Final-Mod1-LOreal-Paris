@@ -15,7 +15,7 @@ As especificações do projeto foram:
 
  - [Figma do projeto](https://www.figma.com/design/Jl39e6uWlBzPUKyr6V7fBx/L'OR%C3%89AL-HTML--SASS---RESPONSIVO?node-id=0-1&node-type=canvas&t=lyXbIYQRbJPc28Ed-0)
 
-- [Projeto](#)
+- [Projeto](https://carolinecdfreitas.github.io/Projeto-Final-Mod1-LOreal-Paris/)
 
 
 ## Aprendizados 📖👩🏾‍💻
