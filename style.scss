@@ -74,10 +74,6 @@ header {
   }
 }
 
-.banner {
-  display: none;
-}
-
 main {
   flex: 1;
 }
@@ -164,12 +160,6 @@ main {
   }
 }
 
-@media (max-width: 480px) {
-  .image-link-produtos {
-    width: 40%;
-  }
-}
-
 @media (min-width: 1025px) {
   header {
     flex-direction: row;
@@ -206,13 +196,12 @@ main {
     }
   }
 
-  .banner {
-    display: block;
+  picture {
     width: 100%;
-    height: 320px;
-    background-image: url("./img//BACKGROUND.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+
+    img{
+      width: 100%;
+    }
   }
 
   .glycolic-gloss {
@@ -254,7 +243,7 @@ main {
   }
 
   .produtos {
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: nowrap;
     gap: $espacoComum;
     padding: 0;
