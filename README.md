@@ -26,9 +26,8 @@ Alguns dos tópicos aplicados foram:
 
 #### HTML 👷🏾‍♀️
 
-- Boas práticas de **SEO** (como a tag `meta description`; e os atributos: `aria-label`, `alt`, `role`);
+- Boas práticas de **SEO** (como a tag `meta description`);
 - Boas práticas de acessibilidade;
-- Uso consciente de `div`;
 - Escrita compatível com a semântica da linguagem;
 - O uso de links externos, como o do `.css`, Google Fonts, etc.)
 
@@ -44,7 +43,7 @@ Alguns dos tópicos aplicados foram:
 - Medidas relativas;
 - Pseudo-classes;
 - Tipografia;
-- O conceito de ***"Everything in CSS is a box 📦"**.
+- O conceito de **"Everything in CSS is a box 📦"**.
 
 ### GIT E GITHUB 💻🚅
 
