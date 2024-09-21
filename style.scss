@@ -42,7 +42,7 @@ header {
   display: flex;
   flex-direction: column;
   width: 100%;
-
+  
   .image-link {
     @include image-block();
     margin: 0 auto;
@@ -72,6 +72,10 @@ header {
       }
     }
   }
+}
+
+picture {
+  display: none;
 }
 
 main {
@@ -160,6 +164,16 @@ main {
   }
 }
 
+footer{
+  width: 100%;
+}
+
+@media (min-width: 381px) and (max-width: 428px) {
+  .produtos {
+    gap: 2.5rem;
+  }
+}
+
 @media (min-width: 1025px) {
   header {
     flex-direction: row;
@@ -197,6 +211,7 @@ main {
   }
 
   picture {
+    display: inline-block;
     width: 100%;
 
     img{

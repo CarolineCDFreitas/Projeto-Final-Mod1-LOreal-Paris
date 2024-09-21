@@ -57,6 +57,10 @@ header {
   color: rgba(56, 50, 50, 0.3294117647);
 }
 
+picture {
+  display: none;
+}
+
 main {
   flex: 1;
 }
@@ -143,6 +147,15 @@ main {
   display: block;
 }
 
+footer {
+  width: 100%;
+}
+
+@media (min-width: 381px) and (max-width: 428px) {
+  .produtos {
+    gap: 2.5rem;
+  }
+}
 @media (min-width: 1025px) {
   header {
     flex-direction: row;
@@ -176,6 +189,7 @@ main {
     margin: 0.5em;
   }
   picture {
+    display: inline-block;
     width: 100%;
   }
   picture img {
