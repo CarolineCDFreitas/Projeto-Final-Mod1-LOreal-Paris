@@ -166,6 +166,10 @@ main {
 
 footer{
   width: 100%;
+  
+  p{
+    text-align: start;
+  }
 }
 
 @media (min-width: 381px) and (max-width: 428px) {
